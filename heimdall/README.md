@@ -15,13 +15,18 @@ Pastikan file kustom recovery (seperti TWRP atau OrangeFox) dan file `vbmeta` An
 
 Gunakan perintah di bawah ini sesuai kebutuhan Anda:
 -   Flash VBMeta dan Recovery Sekaligus (Direkomendasikan)
-    ```bash heimdall flash --VBMETA vbmeta.img --RECOVERY recovery.img```
+```bash
+heimdall flash --VBMETA vbmeta.img --RECOVERY recovery.img
+```
 -   Flash Tanpa Otomatis Reboot
 Jika Anda ingin mencegah perangkat langsung menyala ke sistem agar kustom recovery tidak tertimpa recovery bawaan, tambahkan perintah `--no-reboot`:
-    ```bash heimdall flash --VBMETA vbmeta.img --RECOVERY recovery.img --no-reboot```
-
+```bash
+heimdall flash --VBMETA vbmeta.img --RECOVERY recovery.img --no-reboot
+```
 -   Hanya Flash VBMeta
-    ```bash heimdall flash --VBMETA vbmeta.img```
+```bash
+heimdall flash --VBMETA vbmeta.img
+```
 
 
 <br>
