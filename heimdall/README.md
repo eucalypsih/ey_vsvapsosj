@@ -27,6 +27,15 @@ Jika Anda ingin mencegah perangkat langsung menyala ke sistem agar kustom recove
     ```bash
     heimdall flash --VBMETA vbmeta.img
      ```
+-   Hanya Flash Recovery
+    ```bash
+    heimdall flash --RECOVERY recovery.img
+    ```
+
+### Aturan Penting Nama Partisi
+Heimdall bersifat sensitif terhadap huruf besar dan kecil (_case-sensitive_). Nama argumen partisi harus ditulis dengan huruf kapital penuh (`--VBMETA` dan `--RECOVERY`) agar sistem mengenali partisi perangkat Samsung Anda dengan tepat.
+
+Jika Anda ingin memastikan nama partisi pada ponsel Anda, Anda bisa mengunduh berkas tabel partisi terlebih dahulu dengan mengetik perintah `heimdall download-pit --output file.pit`.
 
 
 <br>
